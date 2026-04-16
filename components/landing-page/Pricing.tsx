@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 
 export default function Pricing() {
   return (
-    <section className="w-full bg-[#f5f7f6] py-16 px-4">
+    <section className="w-full bg-[#f5f7f6] py-16 px-4" id="pricing">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
@@ -18,7 +18,7 @@ export default function Pricing() {
         {/* Cards */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Monthly */}
-          <div className="bg-gray-100 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+          <div className="bg-gray-100 rounded-3xl p-8 flex flex-col justify-between shadow-lg">
             <div>
               <p className="text-sm tracking-widest text-green-700 font-semibold">
                 FLEXIBLE
@@ -48,7 +48,7 @@ export default function Pricing() {
               </ul>
             </div>
 
-            <button className="mt-10 border border-gray-900 rounded-full py-3 font-medium hover:bg-gray-900 hover:text-white transition hover:cursor-pointer">
+            <button className="mt-10 border border-gray-900 rounded-full py-3 font-medium text-black hover:bg-gray-900 hover:text-white transition hover:cursor-pointer">
               Get Started
             </button>
           </div>

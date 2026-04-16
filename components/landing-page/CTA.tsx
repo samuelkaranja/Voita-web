@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="w-full px-4 py-16 bg-[#f5f7f6]">
+    <section className="w-full px-4 py-16 bg-[#f5f7f6]" id="download">
       <div className="max-w-6xl mx-auto">
         {/* Container */}
         <div className="bg-linear-to-r from-[#022f26] to-[#064e3b] rounded-[2.5rem] px-6 md:px-12 py-14 md:py-20 text-center text-white">
