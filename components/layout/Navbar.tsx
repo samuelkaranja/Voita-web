@@ -20,14 +20,14 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/60 backdrop-blur-md shadow-sm" : "bg-[#f0f4f0]"
+        scrolled ? "bg-white/60 backdrop-blur-md shadow-sm" : "bg-[#f7faf8]"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
         {/* Logo */}
         <Link
           href="/"
-          className="text-[#0d2b1f] text-2xl font-extrabold tracking-tight"
+          className="text-[#0d2b1f] text-3xl font-extrabold tracking-tight"
         >
           Voita
         </Link>
@@ -36,18 +36,26 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#1a1a1a]">
           <li>
             <Link
-              href="#services"
-              className="relative pb-1 text-[#0d6e4a]"
+              href="/road-intelligence"
+              className="relative pb-1 text-[15px] hover:text-[#0d6e4a] hover:underline"
             >
-              Services
+              Road Intelligence
             </Link>
           </li>
           <li>
             <Link
-              href="#pricing"
-              className="hover:text-[#0d6e4a] transition-colors"
+              href="/vetted-experts"
+              className="text-[15px] hover:text-[#0d6e4a] transition-colors hover:underline"
             >
-              Pricing
+              Vetted Experts
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/insurance"
+              className="text-[15px] hover:text-[#0d6e4a] transition-colors hover:underline"
+            >
+              Insurance
             </Link>
           </li>
         </ul>
@@ -56,7 +64,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           {/* Desktop CTA */}
           <Link
-            href="#download"
+            href="/#download"
             className="hidden md:inline-block bg-[#0d2b1f] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#0d6e4a] transition-colors"
           >
             Download App
@@ -95,19 +103,27 @@ export default function Navbar() {
       >
         <div className="px-6 pb-6 pt-2 bg-white/90 backdrop-blur-md space-y-4">
           <Link
-            href="#services"
+            href="/road-intelligence"
             className="block text-[#0d2b1f] font-medium"
             onClick={() => setIsOpen(false)}
           >
-            Services
+            Road Intelligence
           </Link>
 
           <Link
-            href="#pricing"
+            href="/vetted-experts"
             className="block text-[#0d2b1f] font-medium"
             onClick={() => setIsOpen(false)}
           >
-            Pricing
+            Vetted Experts
+          </Link>
+
+          <Link
+            href="/insurance"
+            className="block text-[#0d2b1f] font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Insurance
           </Link>
 
           <Link

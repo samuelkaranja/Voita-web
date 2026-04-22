@@ -34,7 +34,7 @@ export default function RoadIntelligenceCard() {
       {/* Right Image/Map side */}
       <div className="relative w-full md:w-[45%] min-h-[200px] bg-[#f8faf8]">
         <Image
-          src="/nairobi-road-network.jpg" // Ensure this matches your public folder path
+          src="/network.png"
           alt="Road network map"
           fill
           className="object-cover opacity-80"

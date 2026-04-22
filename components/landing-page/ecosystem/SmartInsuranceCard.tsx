@@ -25,7 +25,7 @@ export default function SmartInsuranceCard() {
       </div>
       <div className="relative w-full md:w-1/2 min-h-[250px]">
         <Image
-          src="/contract.jpg"
+          src="/keys.png"
           alt="Smart Insurance"
           fill
           className="object-cover"

@@ -4,7 +4,7 @@ import { FcApproval } from "react-icons/fc";
 
 export default function Hero() {
   return (
-    <section className="bg-[#f0f4f0] flex items-center overflow-hidden">
+    <section className="bg-[#f7faf8] flex items-center overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-30 md:py-40 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
         {/* ── Left column ── */}
         <div className="flex flex-col gap-6 order-2 md:order-1">
@@ -29,7 +29,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-3 mt-2">
             <a
-              href="/"
+              href="/#download"
               className="inline-flex items-center gap-2 bg-[#0d2b1f] text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-[#0d6e4a] transition-colors duration-200"
             >
               Download App
@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative w-[500px] h-[440px] rounded-[2.5rem] overflow-hidden shadow-3xl">
             <Image
-              src="/car.avif"
+              src="/navigate.png"
               alt="Car navigation system showing real-time map"
               fill
               className="w-full h-auto object-cover"
