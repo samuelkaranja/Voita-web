@@ -5,7 +5,7 @@ import { FcApproval } from "react-icons/fc";
 export default function Hero() {
   return (
     <section className="bg-[#f7faf8] flex items-center overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-30 md:py-40 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-30 md:py-35 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
         {/* ── Left column ── */}
         <div className="flex flex-col gap-6 order-2 md:order-1">
           {/* Badge */}
@@ -14,7 +14,7 @@ export default function Hero() {
           </span>
 
           {/* Headline */}
-          <h1 className="text-[clamp(2.6rem,5.5vw,4rem)] font-extrabold leading-[1.08] text-[#0d2b1f] tracking-tight">
+          <h1 className="text-[clamp(2.6rem,5.5vw,4rem)] font-bold leading-[1.08] text-[#0d2b1f] tracking-tight">
             Drive Smarter.
             <br />
             Safer. Simpler.

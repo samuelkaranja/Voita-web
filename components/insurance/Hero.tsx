@@ -7,7 +7,6 @@ export default function Hero() {
   return (
     <section className="bg-[#f7faf8]">
       <div className="max-w-7xl mx-auto px-8 lg:px-10 py-16 md:py-30 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
         {/* LEFT CONTENT */}
         <div className="space-y-6">
           {/* Tag */}
@@ -16,20 +15,21 @@ export default function Hero() {
           </span>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#022c22] leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#001810] leading-tight">
             Fairer, Smarter <br />
             Insurance for <br />
-            <span className="text-[#047857]">Every Journey</span>
+            <span className="text-[#006c52]">Every Journey</span>
           </h1>
 
           {/* Description */}
           <p className="text-gray-600 max-w-lg text-base sm:text-lg">
-            Protecting your movement through precision technology and behavioral rewards. Insurance that grows with your lifestyle.
+            Protecting your movement through precision technology and behavioral
+            rewards. Insurance that grows with your lifestyle.
           </p>
 
           {/* CTA + Trust */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-            <button className="bg-[#022c22] hover:bg-[#013220] transition text-white px-6 py-3 rounded-xl flex items-center gap-2 w-fit">
+            <button className="bg-[#001810] hover:bg-[#013220] transition text-white px-6 py-3 rounded-xl flex items-center gap-2 w-fit">
               Explore Models
               <ArrowRight size={18} />
             </button>
@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center md:justify-end">
-          <div className="relative w-full max-w-md md:max-w-lg lg:max-w-xl h-[500px] rounded-[2rem] overflow-hidden">
+          <div className="relative w-full max-w-md md:max-w-lg lg:max-w-xl h-[500px] rounded-4xl overflow-hidden">
             <Image
               src="/insurance-hero.png"
               alt="Driving through forest"
@@ -78,7 +78,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -5,9 +5,9 @@ import { Check } from "lucide-react";
 export default function Pricing() {
   return (
     <section className="w-full bg-[#f5f7f6] py-16 px-4" id="pricing">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
           Simple, Transparent Pricing
         </h2>
         <p className="mt-4 text-gray-500 max-w-xl mx-auto">
@@ -18,7 +18,7 @@ export default function Pricing() {
         {/* Cards */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Monthly */}
-          <div className="bg-gray-100 rounded-3xl p-8 flex flex-col justify-between shadow-lg">
+          <div className="bg-gray-100 rounded-4xl p-8 flex flex-col justify-between shadow-lg">
             <div>
               <p className="text-sm tracking-widest text-green-700 font-semibold">
                 FLEXIBLE
@@ -54,7 +54,7 @@ export default function Pricing() {
           </div>
 
           {/* Annual */}
-          <div className="bg-[#062f27] text-white rounded-3xl p-8 flex flex-col justify-between relative shadow-lg">
+          <div className="bg-[#062f27] text-white rounded-4xl p-8 flex flex-col justify-between relative shadow-lg">
             {/* Badge */}
             <div className="absolute top-6 right-6 bg-green-300 text-green-900 text-xs font-semibold px-3 py-1 rounded-full">
               SAVE 25%

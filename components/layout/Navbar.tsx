@@ -2,10 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const pathname = usePathname();
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Road Intelligence", path: "/road-intelligence" },
+    { name: "Vetted Experts", path: "/vetted-experts" },
+    { name: "Insurance", path: "/insurance" },
+  ];
+
+  const isActive = (path: string) => pathname === path;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,39 +45,27 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#1a1a1a]">
-          <li>
-            <Link
-              href="/"
-              className="relative pb-1 text-[15px] hover:text-[#0d6e4a] hover:underline"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/road-intelligence"
-              className="relative pb-1 text-[15px] hover:text-[#0d6e4a] hover:underline"
-            >
-              Road Intelligence
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/vetted-experts"
-              className="text-[15px] hover:text-[#0d6e4a] transition-colors hover:underline"
-            >
-              Vetted Experts
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/insurance"
-              className="text-[15px] hover:text-[#0d6e4a] transition-colors hover:underline"
-            >
-              Insurance
-            </Link>
-          </li>
+        <ul className="hidden md:flex items-center gap-8 text-[15px] font-medium">
+          {navLinks.map((link) => (
+            <li key={link.path}>
+              <Link
+                href={link.path}
+                className={`relative pb-1 transition-colors ${
+                  isActive(link.path)
+                    ? "text-[#0d6e4a]"
+                    : "text-[#1a1a1a] hover:text-[#0d6e4a]"
+                }
+                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-[#0d6e4a] after:transition-all after:duration-300
+                ${
+                  isActive(link.path)
+                    ? "after:w-full"
+                    : "after:w-0 hover:after:w-full"
+                }`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Right Section */}
@@ -110,40 +110,23 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 pb-6 pt-2 bg-white/90 backdrop-blur-md space-y-4">
-          <Link
-            href="/"
-            className="block text-[#0d2b1f] font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              href={link.path}
+              onClick={() => setIsOpen(false)}
+              className={`block font-medium ${
+                isActive(link.path)
+                  ? "text-[#0d6e4a] border-b-2 border-[#0d6e4a] w-fit"
+                  : "text-[#0d2b1f]"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
 
           <Link
-            href="/road-intelligence"
-            className="block text-[#0d2b1f] font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Road Intelligence
-          </Link>
-
-          <Link
-            href="/vetted-experts"
-            className="block text-[#0d2b1f] font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Vetted Experts
-          </Link>
-
-          <Link
-            href="/insurance"
-            className="block text-[#0d2b1f] font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Insurance
-          </Link>
-
-          <Link
-            href="#download"
+            href="/#download"
             className="block text-center bg-[#0d2b1f] text-white text-sm font-semibold px-5 py-2.5 rounded-full"
             onClick={() => setIsOpen(false)}
           >

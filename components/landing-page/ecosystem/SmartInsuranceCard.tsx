@@ -19,7 +19,7 @@ export default function SmartInsuranceCard() {
             </p>
           </div>
         </div>
-        <button className="mt-8 self-start px-6 py-2 rounded-full border border-gray-200 font-bold text-[#0d2b1f] hover:bg-gray-50">
+        <button className="mt-8 self-start px-6 py-2 rounded-lg border border-gray-200 font-bold text-[#0d2b1f] hover:bg-gray-50">
           Pay-per-KM starting KES 10
         </button>
       </div>

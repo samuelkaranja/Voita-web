@@ -7,7 +7,7 @@ import DigitalRegistryCard from "./ecosystem/DigitalRegistryCard";
 
 export default function Ecosystem() {
   return (
-    <section className="bg-[#f1f4f2] py-2 px-6 lg:px-10" id="services">
+    <section className="bg-[#f1f4f2] py-12 px-6 lg:px-10" id="services">
       <div className="max-w-7xl mx-auto flex flex-col gap-4">
         <p className="text-[#0d6e4a] text-xs font-semibold tracking-widest uppercase mb-1">
           Our Ecosystem
