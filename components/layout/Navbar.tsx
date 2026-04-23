@@ -36,6 +36,14 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#1a1a1a]">
           <li>
             <Link
+              href="/"
+              className="relative pb-1 text-[15px] hover:text-[#0d6e4a] hover:underline"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/road-intelligence"
               className="relative pb-1 text-[15px] hover:text-[#0d6e4a] hover:underline"
             >
@@ -102,6 +110,14 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 pb-6 pt-2 bg-white/90 backdrop-blur-md space-y-4">
+          <Link
+            href="/"
+            className="block text-[#0d2b1f] font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+
           <Link
             href="/road-intelligence"
             className="block text-[#0d2b1f] font-medium"

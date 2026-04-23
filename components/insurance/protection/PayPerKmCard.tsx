@@ -4,7 +4,7 @@ export default function PayPerKmCard() {
   return (
     <div className="bg-[#e0e3e1] rounded-3xl p-8 flex flex-col justify-between">
       <div>
-        <MapPin className="mb-6" />
+        <MapPin className="mb-6 text-[#001810]" />
 
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">
           Pay-per-KM
