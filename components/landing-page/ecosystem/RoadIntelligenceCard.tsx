@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Map } from "lucide-react";
 
 export default function RoadIntelligenceCard() {
@@ -11,10 +12,8 @@ export default function RoadIntelligenceCard() {
             <Map className="text-[#0d6e4a]" size={24} />
           </div>
           <div>
-            <h3 className="text-[#0d2b1f] text-2xl font-bold mb-2">
-              Road Intelligence
-            </h3>
-            <p className="text-[#4a5a52] text-base leading-relaxed max-w-xs">
+            <Link href="/road-intelligence" className="text-[#0d2b1f] text-2xl font-bold hover:underline" >Road Intelligence</Link>
+            <p className="text-[#4a5a52] text-base leading-relaxed max-w-xs mt-2">
               Real-time alerts and comprehensive road quality grading from A to
               D to help you navigate with precision.
             </p>

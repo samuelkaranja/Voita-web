@@ -1,4 +1,5 @@
 import { Wrench, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function VerifiedProvidersCard() {
   return (
@@ -15,12 +16,12 @@ export default function VerifiedProvidersCard() {
           Mark of Approval.
         </p>
       </div>
-      <a
-        href="#"
+      <Link
+        href="/vetted-experts"
         className="flex items-center gap-2 text-[#4de8a0] font-semibold hover:underline"
       >
         Find a provider <ArrowRight size={18} />
-      </a>
+      </Link>
     </div>
   );
 }

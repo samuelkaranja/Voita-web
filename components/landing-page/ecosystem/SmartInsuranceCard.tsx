@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 
 export default function SmartInsuranceCard() {
@@ -10,10 +11,8 @@ export default function SmartInsuranceCard() {
             <ShieldCheck className="text-[#0d6e4a]" size={24} />
           </div>
           <div>
-            <h3 className="text-[#0d2b1f] text-2xl font-bold mb-3">
-              Smart Insurance
-            </h3>
-            <p className="text-[#4a5a52] text-base leading-relaxed">
+            <Link href="/insurance" className="text-[#0d2b1f] text-2xl font-bold hover:underline">Smart Insurance</Link>
+            <p className="text-[#4a5a52] text-base leading-relaxed mt-3">
               Telematics and Pay-per-KM insurance that rewards safe driving. No
               police abstract required for claims.
             </p>
