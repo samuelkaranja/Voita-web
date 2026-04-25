@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full rounded-4xl overflow-hidden min-h-[350px] flex flex-col justify-center p-12 mb-20 text-white"
+      className="relative w-full rounded-4xl overflow-hidden min-h-[350px] flex flex-col justify-center p-12 mt-5 mb-20 text-white"
     >
       {/* Background Image Layer */}
       <Image

@@ -6,7 +6,7 @@ export default function ExpertPortal() {
   return (
     <section
       id="request-scout"
-      className="grid md:grid-cols-2 gap-12 items-start mt-10"
+      className="grid md:grid-cols-2 gap-12 items-start my-15"
     >
       <div>
         <div className="bg-[#c2ecd9] flex items-center gap-2 px-3 py-1 rounded-full max-w-xs">
