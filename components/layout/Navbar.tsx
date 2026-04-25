@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: "Road Intelligence", path: "/road-intelligence" },
     { name: "Vetted Experts", path: "/vetted-experts" },
     { name: "Insurance", path: "/insurance" },
+    { name: "Community", path: "/community" },
   ];
 
   const isActive = (path: string) => pathname === path;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Users, Check } from "lucide-react";
 
 export default function ExpertCommunityCard() {
@@ -7,10 +8,8 @@ export default function ExpertCommunityCard() {
         <Users className="text-[#0d2b1f]" size={24} />
       </div>
       <div>
-        <h3 className="text-[#0d2b1f] text-2xl font-bold mb-3">
-          Expert Community
-        </h3>
-        <p className="text-[#4a5a52] text-base leading-relaxed mb-6">
+        <Link href="/community" className="text-[#0d2b1f] text-2xl font-bold hover:underline" >Expert Community</Link>
+        <p className="text-[#4a5a52] text-base leading-relaxed mt-3 mb-6">
           Request a Scout for second opinions or chat on specialized boards.
         </p>
         <ul className="space-y-3">
