@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FolderHeart, Car, Bell, User } from "lucide-react";
 
 const carDetails = [
@@ -23,10 +24,8 @@ export default function DigitalRegistryCard() {
           </div>
 
           <div>
-            <h3 className="text-[#0d2b1f] text-2xl lg:text-3xl font-bold mb-3">
-              Digital Registry (Profile)
-            </h3>
-            <p className="text-[#4a5a52] text-sm lg:text-base leading-relaxed max-w-lg">
+            <Link href="/profile" className="text-[#0d2b1f] text-2xl lg:text-3xl font-bold mb-3 hover:underline hover:cursor-pointer">Digital Registry (Profile)</Link>
+            <p className="text-[#4a5a52] text-sm lg:text-base leading-relaxed max-w-lg mt-3">
               Complete car and driver management in one place. Track everything
               from mechanical specs to legal renewals with automated
               intelligence.

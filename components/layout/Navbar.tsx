@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: "Vetted Experts", path: "/vetted-experts" },
     { name: "Insurance", path: "/insurance" },
     { name: "Community", path: "/community" },
+    { name: "Profile", path: "/profile" },
   ];
 
   const isActive = (path: string) => pathname === path;
